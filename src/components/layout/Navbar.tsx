@@ -32,8 +32,8 @@ export function Navbar() {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || mobileMenuOpen
-                        ? 'bg-background/80 backdrop-blur-md border-b border-border shadow-lg'
-                        : 'bg-transparent border-transparent'
+                    ? 'bg-background/80 backdrop-blur-md border-b border-border shadow-lg'
+                    : 'bg-transparent border-transparent'
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,7 +47,7 @@ export function Navbar() {
                                     alt="VICTO AI"
                                     width={140}
                                     height={40}
-                                    className="h-10 w-auto"
+                                    className="h-10 w-auto dark:invert-0 invert"
                                 />
                             </div>
                         </Link>
