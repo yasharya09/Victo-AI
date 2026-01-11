@@ -1,0 +1,26 @@
+@import './theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass {
+    @apply bg-card backdrop-blur-md border border-card-border;
+  }
+
+  .glass-hover {
+    @apply hover:bg-card/80 transition-colors duration-300;
+  }
+}
